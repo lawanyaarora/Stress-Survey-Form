@@ -1,0 +1,522 @@
+<html>
+<head>
+    <title> Survey Mental Health</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="regform"><h1> STRESS SURVEY FORM</h1></div>
+    <div class="main">
+
+        <form action="connect.php" method="post">
+
+            <div id="name">
+                <h2 class="name">Name:</h2>
+                <input class="firstname" type="text" name="firstname"><br>
+                <label class="firstlabel">First Name</label>
+
+                <input class="middlename" type="text" name="middlename"><br>
+                <label class="middlelabel">Middle Name</label>
+
+                <input class="lastname" type="text" name="lastname"><br>
+                <label class="lastlabel">Last Name</label>
+            </div>
+
+            <h2 class="name">Email ID:</h2>
+            <input class="email" type="text" name="email">
+
+            <h2 class="name">Phone Number:</h2>
+
+            <input class="code" type="text" name="areacode">
+            <label class="area-code">Area Code</label>
+
+            <input class="number" type="text" name="Phonenumber">
+            <label class="phone-number">Phone Number</label>
+
+            <h2 class="name">Date of Birth:</h2>
+            <input class="Date" type="text" name="dob">
+
+
+            <h2 class="name">Education:</h2>
+
+            <select class="option1" name="qualification">
+                <option disabled="disabled" selected="selected">--Choose Option</option>
+                <option> High School </option>
+                <option> Undergraduate</option>
+                <option> Postgraduate</option>
+                <option> Others </option>
+            </select>
+
+
+            <h2 id="student">Gender:</h2>
+            <label class="radio">
+                <input class="radio-one" type="radio" name="gender" value="m" >
+                <span class="checkmark"></span>
+                Male
+            </label>
+
+            <label class="radio">
+                <input class="radio-two" type="radio" name="gender" value="f">
+                <span class="checkmark"></span>
+                Female
+            </label>
+
+            <label class="radio">
+                <input class="radio-three" type="radio" name="gender" value="o">
+                <span class="checkmark"></span>
+                Others
+            </label>
+
+            <h2 class="name">1.How many hours do you spend completing your homework/assignment ?</h2>
+            <select class="option2" name="ques1"  >
+                <option disabled="disabled" selected="selected">--Choose Option</option>
+                <option>Less than 1 hour </option>
+                <option>1-2 hours</option>
+                <option>2-3 hours</option>
+                <option>3-4 hours</option>
+                <option>More than 5 hours</option>
+            </select>
+
+            <h2 class="name">2.How many hours of sleep do you usually sleep in working days?</h2>
+            <select class="option2" name="ques2">
+                <option disabled="disabled" selected="selected">--Choose Option</option>
+                <option>Less than 6 hours </option>
+                <option>6-7 hours</option>
+                <option>7-8 hours</option>
+                <option>8-9 hours</option>
+                <option>More than 9 hours</option>
+            </select>
+
+            <h2 class="name">3.How much stress do you think you have on average?</h2>
+            <select class="option2" name="ques3">
+                <option disabled="disabled" selected="selected">--Choose Option</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select>
+            <h2 class="name">4.Which of the following create major stress issues?</h2>
+            
+            <table>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="a">
+                            <span class="checkmark"></span>
+                            Student issues
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="b">
+                            <span class="checkmark"></span>
+                            Family issues
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="c">
+                            <span class="checkmark"></span>
+                            Romantic relationship issues
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="d">
+                            <span class="checkmark"></span>
+                            Sport/athletic activities
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="e">
+                            <span class="checkmark"></span>
+                            Financial issues
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="f">
+                            <span class="checkmark"></span>
+                            Friends issues
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="g">
+                            <span class="checkmark"></span>
+                            Health related issues
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques4" value="h">
+                            <span class="checkmark"></span>
+                            Student clubs/organization issues
+                        </label>
+                    <th>
+                </tr>
+                  </table>
+
+            <h2 class="name">5.What are the consequences of stress in your daily life?</h2>
+            <table>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques5" value="a">
+                            <span class="checkmark"></span>
+                            Decrease in activity level
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques5" value="b">
+                            <span class="checkmark"></span>
+                            Difficulty on communicating
+                        </label>
+                        <th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label class="radio">
+                                    <input type="radio" name="ques5" value="c">
+                                    <span class="checkmark"></span>
+                                    Change in eating habits
+                                </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques5" value="d">
+                            <span class="checkmark"></span>
+                            Excess usage of caffeine
+                        </label>
+                    <th>
+                    </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques5" value="e">
+                            <span class="checkmark"></span>
+                            Decreased efficiency and effectiveness
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques5" value="f">
+                            <span class="checkmark"></span>
+                            Inability to rest or relax down
+                        </label>
+                        <th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label class="radio">
+                            <input type="radio" name="ques5" value="g">
+                            <span class="checkmark"></span>
+                            Using tobacco/alcohol
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques5" value="h">
+                            <span class="checkmark"></span>
+                            Accident prone
+                        </label>
+                        <th>
+                        </tr>
+                       </table>
+
+                  <h2 class="name">6.What are the emotional or psychological effect of stress that you have noticed so far?</h2>
+                       <table>
+                           <tr>
+                               <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="a">
+                                       <span class="checkmark"></span>
+                                       Feeling heroic, euphoric or invulnerable
+                                   </label>
+                               </th>
+                               <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="b">
+                                       <span class="checkmark"></span>
+                                       Anxiety or fear
+                                   </label>
+                                   <th>
+                                   </tr>
+                                   <tr>
+                                       <th>
+                                           <label class="radio">
+                                               <input type="radio" name="ques6" value="c">
+                                       <span class="checkmark"></span>
+                                       Irritability or anger problems
+                                   </label>
+                               </th>
+                               <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="d">
+                                       <span class="checkmark"></span>
+                                       Sadness
+                                   </label>
+                                   <th>
+                                   </tr>
+                                   <tr>
+                                       <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="e">
+                                       <span class="checkmark"></span>
+                                       Feeling overwhelmed
+                                   </label>
+                               </th>
+                               <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="f">
+                                       <span class="checkmark"></span>
+                                       Feeling unappreciated
+                                   </label>
+                                   <th>
+                                   </tr>
+                                   <tr>
+                                       <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="g">
+                                       <span class="checkmark"></span>
+                                       Denial
+                                   </label>
+                               </th>
+                               <th>
+                                   <label class="radio">
+                                       <input type="radio" name="ques6" value="h">
+                                       <span class="checkmark"></span>
+                                       Worry about safety
+                                   </label>
+                                   <th>
+                                   </tr>                               
+                       </table>
+
+            <h2 class="name">7.What are the psychical effects of stress that you experienced?</h2>
+            <table>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="a">
+                            <span class="checkmark"></span>
+                            Increased heart rate/Tachycardia
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="b">
+                            <span class="checkmark"></span>
+                            Upset stomach, diarrhea
+                        </label>
+                    <th>
+                    </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="c">
+                            <span class="checkmark"></span>
+                            Loosing too much weight
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="d">
+                            <span class="checkmark"></span>
+                            Muffled hearing
+                        </label>
+                    <th>
+                    </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="e">
+                            <span class="checkmark"></span>
+                            Sore or aching muscles
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="f">
+                            <span class="checkmark"></span>
+                            Tunnel vision
+                        </label>
+                    <th>
+                    </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="g">
+                            <span class="checkmark"></span>
+                            Neck pain
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques7" value="h">
+                            <span class="checkmark"></span>
+                            Increased blood pressure
+                        </label>
+                    <th>
+                    </tr>
+                </table>
+
+            <h2 class="name">8.What are the social effects of stress that you experienced?</h2>
+            <table>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="a">
+                            <span class="checkmark"></span>
+                            Isolating from people
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="b">
+                            <span class="checkmark"></span>
+                            Having problems in sharing ideas
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="c">
+                            <span class="checkmark"></span>
+                            Critisizing
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="d">
+                            <span class="checkmark"></span>
+                            Difficulty in giving or accepting support
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="e">
+                            <span class="checkmark"></span>
+                            Listening difficulties
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="f">
+                            <span class="checkmark"></span>
+                            Blaming
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="g">
+                            <span class="checkmark"></span>
+                            Increased intolerance
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques8" value="h">
+                            <span class="checkmark"></span>
+                            Impatience
+                        </label>
+                    <th>
+                </tr>
+            </table>
+
+            <h2 class="name">9.Which of the following do you apply when you feel stressed?</h2>
+            <table>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="a">
+                            <span class="checkmark"></span>
+                            Sleeping
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="b">
+                            <span class="checkmark"></span>
+                            Going to gym/exercise
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="c">
+                            <span class="checkmark"></span>
+                            Drinking
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="d">
+                            <span class="checkmark"></span>
+                            Smoking
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="e">
+                            <span class="checkmark"></span>
+                            Computer games/console games
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="f">
+                            <span class="checkmark"></span>
+                            Talking to someone
+                        </label>
+                    <th>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="g">
+                            <span class="checkmark"></span>
+                            Taking a walk
+                        </label>
+                    </th>
+                    <th>
+                        <label class="radio">
+                            <input type="radio" name="ques9" value="h">
+                            <span class="checkmark"></span>
+                            Eating
+                        </label>
+                    <th>
+                </tr>
+            </table>
+            
+            <h2 class="name">10.What do you think that the school authorities can do to decrease the stress level?</h2>
+            <textarea class="enterdata" rows="5" cols="50" name="ques10">Type here...</textarea>
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+
+        </form>
+    </div>
+</body>
